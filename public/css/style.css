@@ -1,0 +1,16 @@
+/* body {
+  background: black;
+  color: white;
+} */
+
+* {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  box-sizing: border-box;
+  padding: 0;
+}
+
+.formarea {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
