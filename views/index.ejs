@@ -2,31 +2,197 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>CodedSAM Resume</title>
     <link rel="stylesheet" href="css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css"
+      integrity="sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I"
+      crossorigin="anonymous"
+    />
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script> -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
   </head>
   <body>
-    <div class="formarea">
-      <form action="/contactform" method="post">
-        <input type="text" name="fullname" placeholder="Full name" /><br />
-        <input
-          type="email"
-          name="email"
-          id=""
-          placeholder="Email Address"
-        /><br />
-        <textarea
-          name="message"
-          id=""
-          cols="30"
-          rows="10"
-          placeholder="Message"
-        ></textarea
-        ><br />
-        <input type="submit" value="Submit" />
-      </form>
-    </div>
+    <header class="bg-primary bg-gradient text-white py-5">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-3 text-center text-md-center mb-3">
+            <img
+              class="rounded-circle img-fluid"
+              src="images/sam.jpg"
+              alt="Profile Photo"
+            />
+          </div>
+          <div class="col-md-9">
+            <h1>Anozie Samuel</h1>
+            <h5>Backend Developer</h5>
+            <p class="border-top pt-3">
+            I am a Software engineer specializing in back end development. Experienced with all stages of web and software development. With skills in programming languages including HTML, JavaScript, PHP, CSS and a very good background in graphics designing and video editing.
+            </p>
+            <div class="row">
+              <div class="col-md-6 mb-5">
+                <img
+                  class="rounded img-fluid" width="100px"
+                  src="images/zuri.png"
+                  alt="Zuri"
+                />
+              </div>
+              <div class="col-md-6 mb-5">
+                <img
+                  class="rounded img-fluid" width="100px"
+                  src="images/hng.png"
+                  alt="HNG"
+                />
+              </div>
+               <h5>HNG STAGE 2 TASK</h5>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </header>
+    <nav class="bg-dark text-white-50 mb-5">
+      <div class="container">
+        <div class="row p-3">
+          <div class="col-md pb-2 pb-md-0">
+            <span class="text-white ml-2">samuelanozie10@yahoo.com</>
+          </div>
+          <div class="col-md text-md-center pb-2 pb-md-0">
+            <a href="http://www.samuelanozie.me" class="text-white ml-2">www.samuelanozie.me</a>
+          </div>
+          <div class="col-md text-md-right">
+            <span class="text-white ml-2">+2347063630941</s>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <main class="container">
+      <div class="row">
+        <div class="col-md mb-5">
+          <!-- work experience -->
+          <h2 class="mb-5">Work Experience</h2>
+          <ul>
+            <li>
+              <h6 class="text-primary">
+                Research Intern - Nigerian Institute of Medical Research |
+                2019-2020
+              </h6>
+              <p>Co-investigated the molecular constitution of malaria parasite, to provide insightful data for the design of drugs and vaccines. Performed data analysis especially financial data.</p>
+            </li>
+            <li>
+              <h6 class="text-primary">
+                Backend Developer - Zuri Training | 2021
+              </h6>
+              <p>
+                Complete detailed programming and development tasks for front end websites as well as challenging back-end server code.
+                
+                Developed a backend server for a mobile application using JavaScript (NodeJS).
+              </p>
+            </li>
+          </ul>
+        </div>  </div>
+
+
+              <div class="row"></div>
+        <div class="col-md mb-5">
+          <!-- education -->
+          <h2 class="mb-5">Education</h2>
+          <ul>
+            <li>
+              <h6 class="text-primary">
+                Biochemistry - University of Lagos | 2015-2019
+              </h6>
+              <p></p>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md mb-5">
+          <!-- skills -->
+          <h2 class="mb-5">Skills</h2>
+          HTML, CSS, JavaScript(NodeJS), MongoDB, MYSQL, PHP, WordPress.
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md">
+          <h2 class="mb-5">Contact Me</h2>
+
+          <% if (locals.error) { %>
+            <div class="alert alert-danger fixed-bottom" role="alert">
+  <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+  <%= error %>
+</div>    <script type="text/javascript">
+      window.setTimeout(function() {
+    $(".alert").fadeTo(500, 0).slideUp(500, function(){
+        $(this).remove(); 
+    });
+}, 30000);
+    </script>
+          <% } %> <% if (locals.success) { %>
+         <div class="alert alert-success fixed-bottom" role="alert">
+  <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+  <%= success %>
+</div>
+
+           <script type="text/javascript">
+      window.setTimeout(function() {
+    $(".alert").fadeTo(500, 0).slideUp(500, function(){
+        $(this).remove(); 
+    });
+}, 5000);
+    </script>
+          <% } %>
+
+          <form id="contactForm" action="contactform" method="post">
+            <div class="mb-3">
+              <label class="form-label" for="fullname">Name</label>
+              <input
+                class="form-control"
+                id="fullname"
+                name="fullname"
+                type="text"
+                placeholder="Name"
+              />
+            </div>
+
+            <div class="mb-3">
+              <label class="form-label" for="email">Email Address</label>
+              <input
+                class="form-control"
+                id="email"
+                name="email"
+                type="email"
+                placeholder="Email Address"
+              />
+            </div>
+
+            <div class="mb-3">
+              <label class="form-label" for="message">Message</label>
+              <textarea
+                class="form-control"
+                id="message"
+                name="message"
+                type="text"
+                placeholder="Message"
+                style="height: 10rem"
+              ></textarea>
+            </div>
+
+            <div class="d-grid">
+              <button class="btn btn-primary btn-lg" type="submit">Send</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </main>
+    <footer class="bg-dark text-white-50 text-center mt-5 p-3">
+      &copy; 2021 Anozie Samuel -
+      <a href="https://www.github.com/samcoded" class="text-white-50">GitHub</a>
+    </footer>
   </body>
 </html>

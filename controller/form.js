@@ -3,20 +3,24 @@ const Joi = require("joi");
 require("dotenv").config();
 
 const form = async (req, res) => {
-  // console.log(req.body);
   const { fullname, email, message } = req.body;
   const regschema = Joi.object().keys({
-    fullname: Joi.string().required(),
-    email: Joi.string().email().required(),
-    message: Joi.string().required(),
+    fullname: Joi.string().required().messages({
+      "string.empty": "Please input a name",
+    }),
+    email: Joi.string().email().required().messages({
+      "any.required": "Please input an email address",
+    }),
+    message: Joi.string().required().messages({
+      "any.required": "Add a message",
+    }),
   });
 
   try {
     await regschema.validateAsync(req.body);
   } catch (error) {
-    console.log(error);
     const errMsg = error.message;
-    return res.render("error", { error: errMsg });
+    return res.render("index", { error: errMsg });
   }
 
   try {
@@ -26,11 +30,10 @@ const form = async (req, res) => {
       message,
     });
     const success = "Form successfully submited";
-    return res.render("success", { success: success, form: result });
+    return res.render("index", { success: success, form: result });
   } catch (error) {
-    console.log(error);
     const errMsg = "Something went wrong";
-    return res.render("error", { error: errMsg });
+    return res.render("index", { error: errMsg });
   }
 };
 
@@ -39,7 +42,6 @@ const viewforms = async (req, res) => {
     const forms = await FormModel.find();
     return res.render("forms", { forms: forms });
   } catch (error) {
-    console.log(error);
     const errMsg = "Something went wrong";
     return res.render("forms", { error: errMsg });
   }
