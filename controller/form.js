@@ -29,7 +29,8 @@ const form = async (req, res) => {
       fullname,
       message,
     });
-    const success = "Form successfully submited";
+    const success =
+      "Message successfully submited, i will get back to you as soon as possible.";
     return res.render("index", { success: success, form: result });
   } catch (error) {
     const errMsg = "Something went wrong";
