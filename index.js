@@ -4,7 +4,7 @@ const dotenv = require("dotenv");
 const ejs = require("ejs");
 const app = express();
 dotenv.config();
-const { form } = require("./controller/form");
+const { form, viewforms } = require("./controller/form");
 app.use(express.json({ limit: "30mb", extended: true }));
 app.use(express.urlencoded({ limit: "30mb", extended: true }));
 app.use(express.static("public"));
@@ -15,6 +15,7 @@ app.get("/", (req, res) => {
   res.render("index");
 });
 app.post("/contactform", form);
+app.get("/viewforms", viewforms);
 
 //Database
 const CONNECTION_URL = process.env.MONGOURL;
