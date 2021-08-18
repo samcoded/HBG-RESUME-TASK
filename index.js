@@ -15,6 +15,9 @@ app.get("/", (req, res) => {
   res.render("index");
 });
 app.post("/contactform", form);
+app.get("/contactform", (req, res) => {
+  res.render("index");
+});
 app.get("/viewforms", viewforms);
 
 //Database
